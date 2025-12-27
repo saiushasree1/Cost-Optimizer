@@ -1,0 +1,295 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cloud Cost Optimization Report</title>
+        <style>
+            :root {
+                --bg-main: #f5f7fb;
+                --bg-card: #ffffff;
+                --primary: #1f4fd8;
+                --primary-soft: #e8efff;
+                --text-main: #0f172a;
+                --text-muted: #64748b;
+                --border-soft: #e5e7eb;
+                --success: #15803d;
+                --success-bg: #dcfce7;
+                --warning: #92400e;
+                --warning-bg: #fef3c7;
+                --danger: #991b1b;
+                --danger-bg: #fee2e2;
+            }
+
+            body {
+                margin: 0;
+                font-family: "Segoe UI", Inter, system-ui, sans-serif;
+                background: var(--bg-main);
+                color: var(--text-main);
+            }
+
+            .layout {
+                max-width: 1200px;
+                margin: 50px auto;
+                padding: 0 20px;
+            }
+
+            .header {
+                background: linear-gradient(135deg, #1f4fd8, #3b82f6);
+                color: white;
+                padding: 36px;
+                border-radius: 18px;
+                box-shadow: 0 20px 45px rgba(31,79,216,0.35);
+            }
+
+            .header h1 {
+                margin: 0;
+                font-size: 34px;
+                font-weight: 600;
+            }
+
+            .header p {
+                margin-top: 10px;
+                font-size: 16px;
+                opacity: 0.9;
+            }
+
+            .stats {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 24px;
+                margin-top: 32px;
+            }
+
+            .stat {
+                background: var(--bg-card);
+                border-radius: 16px;
+                padding: 28px;
+                box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+                border: 1px solid var(--border-soft);
+            }
+
+            .stat span {
+                font-size: 14px;
+                color: var(--text-muted);
+            }
+
+            .stat strong {
+                margin-top: 8px;
+                display: block;
+                font-size: 26px;
+                font-weight: 600;
+                color: var(--primary);
+            }
+
+            .section {
+                margin-top: 56px;
+            }
+
+            .section h2 {
+                font-size: 26px;
+                margin-bottom: 20px;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                background: var(--bg-card);
+                border-radius: 18px;
+                overflow: hidden;
+                box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+                border: 1px solid var(--border-soft);
+            }
+
+            th {
+                background: #f1f5ff;
+                color: var(--text-main);
+                padding: 16px;
+                font-size: 13px;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+            }
+
+            td {
+                padding: 16px;
+                border-bottom: 1px solid var(--border-soft);
+                font-size: 14px;
+            }
+
+            tr:last-child td {
+                border-bottom: none;
+            }
+
+            tr:hover {
+                background: #f8fafc;
+            }
+
+            .positive {
+                color: var(--success);
+                font-weight: 600;
+            }
+
+            .pill {
+                padding: 6px 14px;
+                border-radius: 999px;
+                font-size: 12px;
+                font-weight: 600;
+            }
+
+            .low {
+                background: var(--success-bg);
+                color: var(--success);
+            }
+
+            .medium {
+                background: var(--warning-bg);
+                color: var(--warning);
+            }
+
+            .high {
+                background: var(--danger-bg);
+                color: var(--danger);
+            }
+
+            .footer {
+                margin: 48px 0 24px;
+                text-align: center;
+                font-size: 13px;
+                color: var(--text-muted);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="layout">
+            <div class="header">
+                <h1>Cloud Cost Optimization Report</h1>
+                <p>Project: food delivery app</p>
+            </div>
+
+            <div class="stats">
+                <div class="stat">
+                    <span>Total Monthly Cost</span>
+                    <strong>₹17360</strong>
+                </div>
+                <div class="stat">
+                    <span>Budget</span>
+                    <strong>₹50000</strong>
+                </div>
+                <div class="stat">
+                    <span>Over Budget</span>
+                    <strong>False</strong>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Optimization Recommendations</h2>
+                <table>
+                    <tr>
+                        <th>Title</th>
+                        <th>Service</th>
+                        <th>Current Cost</th>
+                        <th>Potential Savings</th>
+                        <th>Effort</th>
+                        <th>Risk</th>
+                    </tr>
+                    
+        <tr>
+            <td>Migrate to AWS Free Tier for Development and Testing</td>
+            <td>EC2</td>
+            <td>₹40</td>
+            <td class="positive">₹30</td>
+            <td>Low</td>
+            <td><span class="pill low">Low</span></td>
+        </tr>
+        
+        <tr>
+            <td>Downgrade EC2 Instance Type</td>
+            <td>EC2</td>
+            <td>₹40</td>
+            <td class="positive">₹20</td>
+            <td>Medium</td>
+            <td><span class="pill medium">Medium</span></td>
+        </tr>
+        
+        <tr>
+            <td>Use AWS RDS for PostgreSQL</td>
+            <td>Database</td>
+            <td>₹15000</td>
+            <td class="positive">₹5000</td>
+            <td>High</td>
+            <td><span class="pill high">High</span></td>
+        </tr>
+        
+        <tr>
+            <td>Use Google Cloud Storage for Object Storage</td>
+            <td>Storage</td>
+            <td>₹315</td>
+            <td class="positive">₹150</td>
+            <td>Medium</td>
+            <td><span class="pill medium">Medium</span></td>
+        </tr>
+        
+        <tr>
+            <td>Use Azure Blob Storage for Object Storage</td>
+            <td>Storage</td>
+            <td>₹315</td>
+            <td class="positive">₹150</td>
+            <td>Medium</td>
+            <td><span class="pill medium">Medium</span></td>
+        </tr>
+        
+        <tr>
+            <td>Use Open-Source Database Alternatives</td>
+            <td>Database</td>
+            <td>₹15000</td>
+            <td class="positive">₹10000</td>
+            <td>High</td>
+            <td><span class="pill high">High</span></td>
+        </tr>
+        
+        <tr>
+            <td>Use Open-Source Storage Alternatives</td>
+            <td>Storage</td>
+            <td>₹315</td>
+            <td class="positive">₹150</td>
+            <td>High</td>
+            <td><span class="pill high">High</span></td>
+        </tr>
+        
+        <tr>
+            <td>Implement Cloud Cost Monitoring and Optimization Tools</td>
+            <td>Cloudwatch</td>
+            <td>₹200</td>
+            <td class="positive">₹100</td>
+            <td>Medium</td>
+            <td><span class="pill medium">Medium</span></td>
+        </tr>
+        
+        <tr>
+            <td>Right-Size EC2 Instances</td>
+            <td>EC2</td>
+            <td>₹40</td>
+            <td class="positive">₹20</td>
+            <td>Medium</td>
+            <td><span class="pill medium">Medium</span></td>
+        </tr>
+        
+        <tr>
+            <td>Use AWS Lambda for Serverless Computing</td>
+            <td>EC2</td>
+            <td>₹40</td>
+            <td class="positive">₹30</td>
+            <td>High</td>
+            <td><span class="pill high">High</span></td>
+        </tr>
+        
+                </table>
+            </div>
+
+            <div class="footer">
+                Generated by AI-Powered Cloud Cost Optimizer
+            </div>
+        </div>
+    </body>
+    </html>
+    

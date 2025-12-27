@@ -1,0 +1,148 @@
+{
+  "project_name": "food delivery app",
+  "analysis": {
+    "total_monthly_cost": 17360,
+    "budget": 50000,
+    "budget_variance": -32640,
+    "service_costs": {
+      "t2.micro": 1500,
+      "db.t2.micro": 15000,
+      "object": 315,
+      "data": 105,
+      "cloudwatch": 200,
+      "iam": 200,
+      "ec2": 40
+    },
+    "is_over_budget": false
+  },
+  "recommendations": [
+    {
+      "title": "Migrate to AWS Free Tier for Development and Testing",
+      "service": "EC2",
+      "current_cost": 40,
+      "potential_savings": 30,
+      "recommendation_type": "Cost Reduction",
+      "description": "Utilize AWS Free Tier for development and testing environments to reduce costs.",
+      "implementation_effort": "Low",
+      "risk_level": "Low",
+      "cloud_providers": [
+        "AWS"
+      ]
+    },
+    {
+      "title": "Downgrade EC2 Instance Type",
+      "service": "EC2",
+      "current_cost": 40,
+      "potential_savings": 20,
+      "recommendation_type": "Cost Reduction",
+      "description": "Downgrade EC2 instance type to a smaller instance type to reduce costs.",
+      "implementation_effort": "Medium",
+      "risk_level": "Medium",
+      "cloud_providers": [
+        "AWS"
+      ]
+    },
+    {
+      "title": "Use AWS RDS for PostgreSQL",
+      "service": "Database",
+      "current_cost": 15000,
+      "potential_savings": 5000,
+      "recommendation_type": "Cost Reduction",
+      "description": "Migrate to AWS RDS for PostgreSQL to reduce costs and improve performance.",
+      "implementation_effort": "High",
+      "risk_level": "High",
+      "cloud_providers": [
+        "AWS"
+      ]
+    },
+    {
+      "title": "Use Google Cloud Storage for Object Storage",
+      "service": "Storage",
+      "current_cost": 315,
+      "potential_savings": 150,
+      "recommendation_type": "Cost Reduction",
+      "description": "Migrate to Google Cloud Storage for object storage to reduce costs and improve performance.",
+      "implementation_effort": "Medium",
+      "risk_level": "Medium",
+      "cloud_providers": [
+        "Google Cloud"
+      ]
+    },
+    {
+      "title": "Use Azure Blob Storage for Object Storage",
+      "service": "Storage",
+      "current_cost": 315,
+      "potential_savings": 150,
+      "recommendation_type": "Cost Reduction",
+      "description": "Migrate to Azure Blob Storage for object storage to reduce costs and improve performance.",
+      "implementation_effort": "Medium",
+      "risk_level": "Medium",
+      "cloud_providers": [
+        "Azure"
+      ]
+    },
+    {
+      "title": "Use Open-Source Database Alternatives",
+      "service": "Database",
+      "current_cost": 15000,
+      "potential_savings": 10000,
+      "recommendation_type": "Cost Reduction",
+      "description": "Consider using open-source database alternatives such as PostgreSQL or MySQL to reduce costs.",
+      "implementation_effort": "High",
+      "risk_level": "High",
+      "cloud_providers": []
+    },
+    {
+      "title": "Use Open-Source Storage Alternatives",
+      "service": "Storage",
+      "current_cost": 315,
+      "potential_savings": 150,
+      "recommendation_type": "Cost Reduction",
+      "description": "Consider using open-source storage alternatives such as Ceph or Gluster to reduce costs.",
+      "implementation_effort": "High",
+      "risk_level": "High",
+      "cloud_providers": []
+    },
+    {
+      "title": "Implement Cloud Cost Monitoring and Optimization Tools",
+      "service": "Cloudwatch",
+      "current_cost": 200,
+      "potential_savings": 100,
+      "recommendation_type": "Cost Reduction",
+      "description": "Implement cloud cost monitoring and optimization tools to identify areas of cost savings.",
+      "implementation_effort": "Medium",
+      "risk_level": "Medium",
+      "cloud_providers": [
+        "AWS",
+        "Google Cloud",
+        "Azure"
+      ]
+    },
+    {
+      "title": "Right-Size EC2 Instances",
+      "service": "EC2",
+      "current_cost": 40,
+      "potential_savings": 20,
+      "recommendation_type": "Cost Reduction",
+      "description": "Right-size EC2 instances to ensure they are running at optimal capacity.",
+      "implementation_effort": "Medium",
+      "risk_level": "Medium",
+      "cloud_providers": [
+        "AWS"
+      ]
+    },
+    {
+      "title": "Use AWS Lambda for Serverless Computing",
+      "service": "EC2",
+      "current_cost": 40,
+      "potential_savings": 30,
+      "recommendation_type": "Cost Reduction",
+      "description": "Use AWS Lambda for serverless computing to reduce costs and improve performance.",
+      "implementation_effort": "High",
+      "risk_level": "High",
+      "cloud_providers": [
+        "AWS"
+      ]
+    }
+  ]
+}

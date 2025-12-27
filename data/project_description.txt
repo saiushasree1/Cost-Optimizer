@@ -1,0 +1,1 @@
+I want to build a food delivery app for 10000 users per month.The backend will be Node.js and database PostgreSQL.Images will be stored in object storage.Hosting will be on AWS.My monthly budget is 50000 INR.The system should be scalable and cost efficient.

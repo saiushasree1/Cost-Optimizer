@@ -1,0 +1,16 @@
+{
+  "name": "food delivery app",
+  "budget_inr_per_month": 50000,
+  "description": "scalable and cost efficient food delivery app",
+  "tech_stack": {
+    "frontend": "",
+    "backend": "Node.js",
+    "database": "PostgreSQL",
+    "storage": "object storage",
+    "hosting": "AWS"
+  },
+  "non_functional_requirements": [
+    "scalable",
+    "cost efficient"
+  ]
+}

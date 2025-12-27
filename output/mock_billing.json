@@ -1,0 +1,279 @@
+{
+  "records": [
+    {
+      "month": "2024-07",
+      "service": "AWS",
+      "resource_id": "i-0123456789abcdef0",
+      "region": "ap-south-1",
+      "usage_type": "On-Demand",
+      "usage_quantity": 1,
+      "unit": "instance",
+      "cost_inr": 1500,
+      "description": "t2.micro instance"
+    },
+    {
+      "month": "2024-07",
+      "service": "AWS",
+      "resource_id": "rds-instance-1234567890abcdef0",
+      "region": "ap-south-1",
+      "usage_type": "On-Demand",
+      "usage_quantity": 0.25,
+      "unit": "instance",
+      "cost_inr": 3750,
+      "description": "db.t2.micro PostgreSQL instance"
+    },
+    {
+      "month": "2024-07",
+      "service": "AWS",
+      "resource_id": "s3-bucket-1234567890abcdef0",
+      "region": "ap-south-1",
+      "usage_type": "Storage",
+      "usage_quantity": 50,
+      "unit": "GB",
+      "cost_inr": 150,
+      "description": "object storage"
+    },
+    {
+      "month": "2024-07",
+      "service": "AWS",
+      "resource_id": "s3-bucket-1234567890abcdef0",
+      "region": "ap-south-1",
+      "usage_type": "Data Transfer",
+      "usage_quantity": 10,
+      "unit": "GB",
+      "cost_inr": 50,
+      "description": "data transfer out"
+    },
+    {
+      "month": "2024-07",
+      "service": "AWS",
+      "resource_id": "cloudwatch-1234567890abcdef0",
+      "region": "ap-south-1",
+      "usage_type": "Metrics",
+      "usage_quantity": 10000,
+      "unit": "metric",
+      "cost_inr": 100,
+      "description": "cloudwatch metrics"
+    },
+    {
+      "month": "2024-07",
+      "service": "AWS",
+      "resource_id": "iam-user-1234567890abcdef0",
+      "region": "ap-south-1",
+      "usage_type": "User",
+      "usage_quantity": 1,
+      "unit": "user",
+      "cost_inr": 50,
+      "description": "iam user"
+    },
+    {
+      "month": "2024-07",
+      "service": "AWS",
+      "resource_id": "ec2-security-group-1234567890abcdef0",
+      "region": "ap-south-1",
+      "usage_type": "Security Group",
+      "usage_quantity": 1,
+      "unit": "group",
+      "cost_inr": 10,
+      "description": "ec2 security group"
+    },
+    {
+      "month": "2024-07",
+      "service": "AWS",
+      "resource_id": "rds-instance-234567890abcdef1",
+      "region": "ap-south-1",
+      "usage_type": "On-Demand",
+      "usage_quantity": 0.25,
+      "unit": "instance",
+      "cost_inr": 3750,
+      "description": "db.t2.micro PostgreSQL instance"
+    },
+    {
+      "month": "2024-07",
+      "service": "AWS",
+      "resource_id": "s3-bucket-234567890abcdef1",
+      "region": "ap-south-1",
+      "usage_type": "Storage",
+      "usage_quantity": 25,
+      "unit": "GB",
+      "cost_inr": 75,
+      "description": "object storage"
+    },
+    {
+      "month": "2024-07",
+      "service": "AWS",
+      "resource_id": "s3-bucket-234567890abcdef1",
+      "region": "ap-south-1",
+      "usage_type": "Data Transfer",
+      "usage_quantity": 5,
+      "unit": "GB",
+      "cost_inr": 25,
+      "description": "data transfer out"
+    },
+    {
+      "month": "2024-07",
+      "service": "AWS",
+      "resource_id": "cloudwatch-234567890abcdef1",
+      "region": "ap-south-1",
+      "usage_type": "Metrics",
+      "usage_quantity": 5000,
+      "unit": "metric",
+      "cost_inr": 50,
+      "description": "cloudwatch metrics"
+    },
+    {
+      "month": "2024-07",
+      "service": "AWS",
+      "resource_id": "iam-user-234567890abcdef1",
+      "region": "ap-south-1",
+      "usage_type": "User",
+      "usage_quantity": 1,
+      "unit": "user",
+      "cost_inr": 50,
+      "description": "iam user"
+    },
+    {
+      "month": "2024-07",
+      "service": "AWS",
+      "resource_id": "ec2-security-group-234567890abcdef1",
+      "region": "ap-south-1",
+      "usage_type": "Security Group",
+      "usage_quantity": 1,
+      "unit": "group",
+      "cost_inr": 10,
+      "description": "ec2 security group"
+    },
+    {
+      "month": "2024-07",
+      "service": "AWS",
+      "resource_id": "rds-instance-34567890abcdef2",
+      "region": "ap-south-1",
+      "usage_type": "On-Demand",
+      "usage_quantity": 0.25,
+      "unit": "instance",
+      "cost_inr": 3750,
+      "description": "db.t2.micro PostgreSQL instance"
+    },
+    {
+      "month": "2024-07",
+      "service": "AWS",
+      "resource_id": "s3-bucket-34567890abcdef2",
+      "region": "ap-south-1",
+      "usage_type": "Storage",
+      "usage_quantity": 12,
+      "unit": "GB",
+      "cost_inr": 36,
+      "description": "object storage"
+    },
+    {
+      "month": "2024-07",
+      "service": "AWS",
+      "resource_id": "s3-bucket-34567890abcdef2",
+      "region": "ap-south-1",
+      "usage_type": "Data Transfer",
+      "usage_quantity": 3,
+      "unit": "GB",
+      "cost_inr": 12,
+      "description": "data transfer out"
+    },
+    {
+      "month": "2024-07",
+      "service": "AWS",
+      "resource_id": "cloudwatch-34567890abcdef2",
+      "region": "ap-south-1",
+      "usage_type": "Metrics",
+      "usage_quantity": 2000,
+      "unit": "metric",
+      "cost_inr": 20,
+      "description": "cloudwatch metrics"
+    },
+    {
+      "month": "2024-07",
+      "service": "AWS",
+      "resource_id": "iam-user-34567890abcdef2",
+      "region": "ap-south-1",
+      "usage_type": "User",
+      "usage_quantity": 1,
+      "unit": "user",
+      "cost_inr": 50,
+      "description": "iam user"
+    },
+    {
+      "month": "2024-07",
+      "service": "AWS",
+      "resource_id": "ec2-security-group-34567890abcdef2",
+      "region": "ap-south-1",
+      "usage_type": "Security Group",
+      "usage_quantity": 1,
+      "unit": "group",
+      "cost_inr": 10,
+      "description": "ec2 security group"
+    },
+    {
+      "month": "2024-07",
+      "service": "AWS",
+      "resource_id": "rds-instance-4567890abcdef3",
+      "region": "ap-south-1",
+      "usage_type": "On-Demand",
+      "usage_quantity": 0.25,
+      "unit": "instance",
+      "cost_inr": 3750,
+      "description": "db.t2.micro PostgreSQL instance"
+    },
+    {
+      "month": "2024-07",
+      "service": "AWS",
+      "resource_id": "s3-bucket-4567890abcdef3",
+      "region": "ap-south-1",
+      "usage_type": "Storage",
+      "usage_quantity": 18,
+      "unit": "GB",
+      "cost_inr": 54,
+      "description": "object storage"
+    },
+    {
+      "month": "2024-07",
+      "service": "AWS",
+      "resource_id": "s3-bucket-4567890abcdef3",
+      "region": "ap-south-1",
+      "usage_type": "Data Transfer",
+      "usage_quantity": 6,
+      "unit": "GB",
+      "cost_inr": 18,
+      "description": "data transfer out"
+    },
+    {
+      "month": "2024-07",
+      "service": "AWS",
+      "resource_id": "cloudwatch-4567890abcdef3",
+      "region": "ap-south-1",
+      "usage_type": "Metrics",
+      "usage_quantity": 3000,
+      "unit": "metric",
+      "cost_inr": 30,
+      "description": "cloudwatch metrics"
+    },
+    {
+      "month": "2024-07",
+      "service": "AWS",
+      "resource_id": "iam-user-4567890abcdef3",
+      "region": "ap-south-1",
+      "usage_type": "User",
+      "usage_quantity": 1,
+      "unit": "user",
+      "cost_inr": 50,
+      "description": "iam user"
+    },
+    {
+      "month": "2024-07",
+      "service": "AWS",
+      "resource_id": "ec2-security-group-4567890abcdef3",
+      "region": "ap-south-1",
+      "usage_type": "Security Group",
+      "usage_quantity": 1,
+      "unit": "group",
+      "cost_inr": 10,
+      "description": "ec2 security group"
+    }
+  ]
+}
